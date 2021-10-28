@@ -1,0 +1,239 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.div-neutre {
+  padding: 30px;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  /* Je rajoute un contexte de positionnement pour éviter que tout déplacement le soit par rapport au body */
+  position: relative;
+}
+
+.orange {
+  background-color: #d2691e;
+}
+
+.blue {
+  background-color: #555f98;
+}
+
+.green {
+  background-color: #92c331;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+/*
+  Le box-sizing permet de modifier le comportement de notre boîte:
+   - Content-Box : seul le contenu est considérer en terme de taille (une boite de 100px de large contiendra un texte de 100px de large auquel s'ajoute les bordures et les marges)
+   - Border-Box: l'ensemble des bordures, des marges est comptabilisé dans le calcul de la largeur de son élément (une boite de 100px de large contiendra un texte de 100px - les bordures - les marges)
+*/
+.carre {
+  width: 155px;
+  height: 155px;
+  box-sizing: border-box;
+}
+
+.rectangle {
+  /* width: 100%; */
+  height: 155px;
+}
+
+.containerBoxSizing {
+  box-sizing: border-box;
+  width: 400px;
+  height: 400px;
+  margin: 50px auto;
+  position: relative;
+  padding: 30px;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* ----------------------------Relative--------------------------------- */
+/* --------------------------------------------------------------------- */
+#relativeMiddle {
+  position: relative;
+  /* afin de gérer la transparence, je peux utiliser la propriété opacity */
+  opacity: 0.8;
+  left: 100px;
+}
+
+#relativeCenter {
+  position: relative;
+  right: 250px;
+}
+
+/* --------------------------------------------------------------------- */
+/* ----------------------------Absolute--------------------------------- */
+/* --------------------------------------------------------------------- */
+#absolute {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
+
+/* --------------------------------------------------------------------- */
+/* ------------------------Absolute Contexte---------------------------- */
+/* --------------------------------------------------------------------- */
+#absoluteContexteGreen {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+#absoluteContexteOrange {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
+
+/* --------------------------------------------------------------------- */
+/* ------------------------4 Carrés Absolute---------------------------- */
+/* --------------------------------------------------------------------- */
+#CarreAbsoluteGreen,
+#CarreAbsoluteBlue,
+#CarreAbsoluteOrange,
+#CarreAbsoluteYellow {
+  position: absolute;
+}
+
+#CarreAbsoluteBlue {
+  right: 30px;
+}
+
+#CarreAbsoluteOrange {
+  bottom: 30px;
+}
+
+#CarreAbsoluteYellow {
+  bottom: 30px;
+  right: 30px;
+}
+
+/* --------------------------------------------------------------------- */
+/* ------------------------4 Carrés Relative---------------------------- */
+/* --------------------------------------------------------------------- */
+#CarreRelativeGreen,
+#CarreRelativeBlue,
+#CarreRelativeOrange,
+#CarreRelativeYellow {
+  position: relative;
+}
+
+#CarreRelativeBlue {
+  left:185px;
+  bottom: 155px;
+}
+
+#CarreRelativeOrange {
+  bottom: 125px;
+}
+
+#CarreRelativeYellow {
+  left: 185px;
+  bottom: 280px;
+}
+
+/* --------------------------------------------------------------------- */
+/* ------------------------4 Carrés Z-Index----------------------------- */
+/* --------------------------------------------------------------------- */
+#carreZindexGreen,
+#carreZindexBlue,
+#carreZindexOrange,
+#carreZindexYellow {
+  position: absolute;
+}
+
+#carreZindexBlue {
+  top: 60px;
+  left: 60px;
+  z-index:2;
+  /* effet de transparence :
+    OPACITY : 0 < valeur < 1 ou 0 c'est transparent et 1 opaque */
+  opacity: 0.8;
+}
+
+#carreZindexOrange {
+  bottom: 60px;
+  right: 60px;
+  z-index: 1;
+}
+
+#carreZindexYellow {
+  bottom: 30px;
+  right: 30px;
+}
+
+/* --------------------------------------------------------------------- */
+/* -----------------------------Float----------------------------------- */
+/* --------------------------------------------------------------------- */
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+/* Pour arrêter de faire flotter les éléments j'utilise la propriété clear avec la valeur both */
+
+.clear {
+  clear: both;
+}
+
+/* --------------------------------------------------------------------- */
+/* -----------------------------STICKY---------------------------------- */
+/* --------------------------------------------------------------------- */
+ul {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  width: 10%;
+  color: white;
+  /* Pour arrondir les bordures, on va utiliser border-radius 
+    On peut exprimer l'arrondi en px ou en %
+    - on peut choisir le coin arrondi border-top-right pour arrondir le coin en haut à droite
+  */
+  border-radius: 10px;
+}
+
+nav {
+  position: sticky;
+  top: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+article {
+  width: 80%;
+  text-align: justify;
+  margin-left: 20%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

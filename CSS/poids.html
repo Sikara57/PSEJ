@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style/poids.css">
+  <title>Poids des sélecteurs</title>
+</head>
+<body>
+  <h1>Poids des sélecteurs</h1>
+  <!-- div#poids -->
+  <div id="poids">
+    <p id="paragraphe1" class="paragraphe" data-test="test2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facilis maiores voluptas necessitatibus ipsam pariatur veniam assumenda eos eum excepturi amet distinctio impedit repellendus sint veritatis doloribus incidunt, sed reprehenderit?
+    </p>
+    <p id="paragraphe2" class="paragraphe" data-test="test">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos eum officia maiores at culpa ipsa officiis magnam, assumenda error iste reprehenderit veniam ratione dolorum, aliquid distinctio animi minima voluptates consequatur.
+    </p>
+    <div class="paragraphe">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ratione repellendus enim minima hic odio cum iure, maiores, nemo dolor itaque nostrum esse alias laboriosam exercitationem porro laborum natus molestias.
+    </div>
+    <div class="paragraphe test">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero alias praesentium eos illum, voluptatem nesciunt tempore doloremque incidunt reprehenderit nihil adipisci accusamus dolor nam, veniam sapiente voluptatibus minima ratione? Tenetur.
+    </div>
+  </div>
+
+  <hr>
+  <!-- CSS : votre selecteur { color: lacouleur} -->
+  <ul>
+    <li>Bleu</li>
+    <li class="vert">Vert</li>
+    <li name="ha">Orange</li>
+    <li>Bleu</li>
+    <li name="ha">Orange</li>
+    <li name="ha" class="vert">Vert</li>
+    <li id="rose">Rose</li>
+    <li>Bleu</li>
+  </ul>
+</body>
+</html>

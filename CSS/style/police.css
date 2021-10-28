@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+  font-family: 'Custom';
+  src: url('../font/RampartOne-Regular.ttf');
+}
+
+.paragraphe {
+  width: 400px;
+  text-align: justify;
+}
+
+.purple {
+  background-color: purple;
+}
+
+#paragraphe1 {
+  color: tomato;
+  letter-spacing: 5px;
+  line-height: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#paragraphe2 {
+  text-decoration: underline dotted tomato;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Custom';
+}
+
+h1 {
+  font-size: 40px;
+  font-style: italic;
+}

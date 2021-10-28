@@ -1,0 +1,28 @@
+#hatsune {
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/hatsune.jpg);
+   /* 
+   background-size:
+  cover : recadrer l'image dans la zone disponible
+  contain: contient l'image et s'afficher entièrement dans la zone
+  */
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  /* 
+    En cover, si l'image ne s'affiche pas
+    je peux utiliser
+  background-position: center | left | right | top | bottom;
+  */
+
+}
+
+img {
+  width: 200px;
+}
+
+.center {
+  text-align: center;
+}

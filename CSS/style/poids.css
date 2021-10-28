@@ -1,0 +1,57 @@
+/* 
+  - Lorsqu'une propiété est suivi de "!important"
+  poids = infini
+  - element comme une div 
+  poids = 1 points
+  - une classe .paragraphe ou selecteur d'attribut 
+  poids = 10 points
+  - id #paragraphe1
+  poids = 100 points
+*/
+
+/* INFINI */
+[data-test="test2"] {
+  background-color: yellow !important;
+}
+
+/* poids = elt + classe 1 + 10 */
+div.paragraphe {
+  background-color: purple;
+}
+
+/* 100 */
+#paragraphe1 {
+  background-color: aqua;
+}
+
+/* 10 */
+.paragraphe {
+  background-color: orange;
+}
+
+/* 10 */
+[data-test="test"] {
+  background-color: brown;
+}
+
+/* 10 + 10 */
+.paragraphe.test {
+  background-color: tomato;
+}
+
+/* ------------------------ */
+li {
+  color: blue;
+}
+
+li.vert {
+  color: green;
+}
+
+[name="ha"] {
+  color: orange;
+}
+
+#rose {
+  color: pink;
+}

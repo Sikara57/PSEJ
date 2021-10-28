@@ -1,0 +1,17 @@
+.square {
+  width: 150px;
+  height: 5vh;
+  border: 1px solid black;
+}
+
+#test1 {
+  background-color: red;
+}
+
+#test2 {
+  background-color: rgb(145,255,45);
+}
+
+#test3 {
+  background-color: #DE05C5;
+}

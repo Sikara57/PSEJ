@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Custom';
+  src: url('../font/RampartOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Custom2';
+  src: url('../font/Qahiri-Regular.ttf');
+}
+
+.poupee {
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+}
+
+#poup1 {
+  background-image: url(../img/1.jpg);
+  width: 1000px;
+  height: 500px;
+}
+
+#poup2 {
+  background-image: url(../img/2.jpg);
+  width: 750px;
+  height: 400px;
+}
+
+#poup3{
+  background-image: url(../img/3.jpg);
+  width: 500px;
+  height: 300px;
+}
+
+#poup4{
+  background-image: url(../img/4.jpg);
+  width: 250px;
+  height: 200px;
+}
+
+p {
+  color: blue;
+  text-align: justify;
+  width: 400px;
+  font-family: 'Custom';
+}
+
+#second {
+  font-family: 'Custom2';
+  text-align: justify;
+  width: 400px;
+}

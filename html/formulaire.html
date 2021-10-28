@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire</title>
+</head>
+<body>
+  <form action="" method="POST">
+    <p>
+      <!-- label+br+input -->
+      <label for="nom">Nom</label><br>
+      <input type="text" id="nom" name="nom">
+    </p>
+    <!-- p>label+br+input -->
+    <p>
+      <label for="prenom">Prénom</label><br>
+      <input type="text" id="prenom" name="prenom">
+    </p>
+    <p>
+      <label for="date">Date de naissance</label><br>
+      <input type="date" id="date" name="date">
+    </p>
+    <p>
+      Sexe: <br>
+      <!-- input:radio+label -->
+      <input type="radio" name="sexe" id="h"><label for="h">Homme</label> <br>
+      <input type="radio" name="sexe" id="f"><label for="f">Femme</label>
+    </p>
+    <p>
+      <!-- label+br+select -->
+      <label for="pays">Pays</label><br>
+      <select name="pays" id="pays">
+        <option value="">Veuillez faire un choix</option>
+        <option value="Fr">France</option>
+        <option value="Sn">Sénégal</option>
+        <option value="Eng">Angleterre</option>
+      </select>
+    </p>
+    <p>
+      <!-- label+br+textarea -->
+      <label for="description">Description</label><br>
+      <textarea name="description" id="description" cols="30" rows="10"></textarea>
+    </p>
+    <!-- input:submit -->
+    <input type="submit" value="Envoyer">
+  </form>
+</body>
+</html>

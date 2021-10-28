@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------- */
+/* ---------------------- Header ---------------------- */
+/* ---------------------------------------------------- */
+#header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#header ul {
+  list-style: none;
+  padding-left: 0;
+  width: 30%;
+}
+
+#header a {
+  text-decoration: none; /* j'enlève le trait de soulignement */
+  display: block; /* a => inline en block le comportement du retour à la ligne est géré correctement */
+  padding: 10px;
+  font-weight: bold;
+}
+
+#header h1 {
+  font-family: 'Charmonman'; /* j'utilise ma police charger depuis google fonts */
+  color: tomato;
+  width: 30%;
+  text-align: center;
+  font-size: 2em; /* 2em = 2element h1 */
+}
+
+#signin {
+  color: rgb(88, 84, 84);
+  margin-right: 10px; /* je triche un tout petit peu :x */
+}
+
+#signup {
+  color: white;
+  background-color: rgb(88, 84, 84);
+}
+
+#connect {
+  display: flex;
+  justify-content: center; /* je centre mes éléments dans les 30% de la taille du body alloué au container connect */
+}
+
+#connect a {
+  border: 1px solid rgb(88, 84, 84);
+  border-radius: 5px;
+}
+
+#menu {
+  display: flex;
+  color: rgb(27, 27, 97);
+}
+
+/* ---------------------------------------------------- */
+/* ----------------------- Corps ---------------------- */
+/* ---------------------------------------------------- */
+#corps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#text {
+  width: 40%;
+  height: 290px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#text h2,
+#text p {
+  margin: 0;
+}
+
+#text h2 {
+  font-size:59px;
+  color: rgb(27, 27, 97);
+}
+
+#text p {
+  text-align: justify;
+}
+
+#text a {
+  display: block;
+  padding: 20px 60px;
+  text-decoration: none;
+  background-color: tomato;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#banner {
+  width: 40%;
+}
+
+#banner img {
+  width: 100%;
+}
